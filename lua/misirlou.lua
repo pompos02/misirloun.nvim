@@ -664,7 +664,7 @@ local function set_highlights()
 
         -- nvim-telescope/telescope.nvim
         TelescopeBorder = make_border(),
-        TelescopeMatching = { fg = palette.rose },
+        TelescopeMatching = { fg = palette.string },
         TelescopeNormal = { link = "NormalFloat" },
         TelescopePromptNormal = { link = "TelescopeNormal" },
         TelescopePromptPrefix = { fg = palette.subtle },
@@ -1018,7 +1018,7 @@ local function set_highlights()
         BlinkCmpScrollBarGutter = { bg = palette.bg },
         BlinkCmpLabel = { fg = palette.text, bg = palette.bg },
         BlinkCmpLabelDeprecated = { fg = palette.muted, bg = palette.bg },
-        BlinkCmpLabelMatch = { fg = palette.rose, bg = palette.bg },
+        BlinkCmpLabelMatch = { fg = palette.string, bg = palette.bg },
         BlinkCmpLabelDetail = { fg = palette.subtle, bg = palette.bg },
         BlinkCmpLabelDescription = { fg = palette.subtle, bg = palette.bg },
         BlinkCmpKind = { fg = palette.purple, bg = palette.bg },
@@ -1074,7 +1074,7 @@ local function set_highlights()
         SnacksPickerList = { fg = palette.text, bg = palette.bg },
         SnacksPickerPreview = { fg = palette.text, bg = palette.bg },
         SnacksPickerInput = { fg = palette.text, bg = palette.bg },
-        SnacksPickerMatch = { fg = palette.rose, bold = styles.bold },
+        SnacksPickerMatch = { fg = palette.string, bold = styles.bold },
 
         -- justinmk/vim-sneak
         Sneak = { fg = palette.base, bg = palette.red },
