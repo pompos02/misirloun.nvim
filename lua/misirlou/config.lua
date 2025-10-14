@@ -34,7 +34,7 @@ config.options = {
         link = "purple",
         panel = "surface",
 
-         error = "highlight_high",
+         error = "red",
          hint = "highlight_low",
          info = "highlight_low",
          ok = "green",
