@@ -1074,7 +1074,7 @@ local function set_highlights()
         SnacksPickerList = { fg = palette.text, bg = palette.bg },
         SnacksPickerPreview = { fg = palette.text, bg = palette.bg },
         SnacksPickerInput = { fg = palette.text, bg = palette.bg },
-        SnacksPickerMatch = { fg = palette.string, bold = styles.bold },
+        SnacksPickerMatch = { bg = palette.text, fg = palette.bg, bold = styles.bold, underline = true },
 
         -- justinmk/vim-sneak
         Sneak = { fg = palette.base, bg = palette.red },
