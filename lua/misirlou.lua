@@ -1014,7 +1014,7 @@ local function set_highlights()
         -- Saghen/blink.cmp
         BlinkCmpMenu = { fg = palette.text, bg = palette.bg },
         BlinkCmpMenuBorder = { fg = palette.text, bg = palette.bg },
-        BlinkCmpMenuSelection = { fg = palette.text, bg = palette.highlight_low },
+        BlinkCmpMenuSelection = { fg = palette.bg, bg = palette.text },
         BlinkCmpScrollBarThumb = { bg = palette.muted },
         BlinkCmpScrollBarGutter = { bg = palette.bg },
         BlinkCmpLabel = { fg = palette.text, bg = palette.bg },
