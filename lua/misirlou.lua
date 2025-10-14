@@ -142,7 +142,7 @@ local function set_highlights()
         TabLineSel = { fg = palette.text, bg = palette.highlight_low, bold = styles.bold },
         Title = { fg = palette.lavender, bold = styles.bold },
         VertSplit = { fg = groups.border },
-        Visual = { Visual = { fg = palette.bg, bg = palette.text } },
+        Visual = { fg = palette.bg, bg = palette.text },
 
         YankHighlight = { fg = palette.text, bg = palette.lavender, blend = 50 },
         -- VisualNOS = {},
@@ -1019,7 +1019,7 @@ local function set_highlights()
         BlinkCmpScrollBarGutter = { bg = palette.bg },
         BlinkCmpLabel = { fg = palette.text, bg = palette.bg },
         BlinkCmpLabelDeprecated = { fg = palette.muted, bg = palette.bg },
-        BlinkCmpLabelMatch = { fg = palette.bg, bold = styles.bold, underline = true },
+        BlinkCmpLabelMatch = { bg = palette.text, fg = palette.bg, bold = styles.bold, underline = true },
         BlinkCmpLabelDetail = { fg = palette.subtle, bg = palette.bg },
         BlinkCmpLabelDescription = { fg = palette.subtle, bg = palette.bg },
         BlinkCmpKind = { fg = palette.purple, bg = palette.bg },
@@ -1075,7 +1075,7 @@ local function set_highlights()
         SnacksPickerList = { fg = palette.text, bg = palette.bg },
         SnacksPickerPreview = { fg = palette.text, bg = palette.bg },
         SnacksPickerInput = { fg = palette.text, bg = palette.bg },
-        SnacksPickerMatch = { fg = palette.bg, bold = styles.bold, underline = true },
+        SnacksPickerMatch = { bg = palette.text, fg = palette.bg, bold = styles.bold, underline = true },
 
         -- justinmk/vim-sneak
         Sneak = { fg = palette.base, bg = palette.red },
