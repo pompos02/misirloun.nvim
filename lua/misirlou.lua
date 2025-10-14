@@ -1019,7 +1019,7 @@ local function set_highlights()
         BlinkCmpScrollBarGutter = { bg = palette.bg },
         BlinkCmpLabel = { fg = palette.text, bg = palette.bg },
         BlinkCmpLabelDeprecated = { fg = palette.muted, bg = palette.bg },
-        BlinkCmpLabelMatch = { underline = true },
+        BlinkCmpLabelMatch = { fg = palette.bg, bold = styles.bold, underline = true },
         BlinkCmpLabelDetail = { fg = palette.subtle, bg = palette.bg },
         BlinkCmpLabelDescription = { fg = palette.subtle, bg = palette.bg },
         BlinkCmpKind = { fg = palette.purple, bg = palette.bg },
@@ -1075,7 +1075,7 @@ local function set_highlights()
         SnacksPickerList = { fg = palette.text, bg = palette.bg },
         SnacksPickerPreview = { fg = palette.text, bg = palette.bg },
         SnacksPickerInput = { fg = palette.text, bg = palette.bg },
-        SnacksPickerMatch = { underline = true },
+        SnacksPickerMatch = { fg = palette.bg, bold = styles.bold, underline = true },
 
         -- justinmk/vim-sneak
         Sneak = { fg = palette.base, bg = palette.red },
