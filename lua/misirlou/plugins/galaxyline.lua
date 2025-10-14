@@ -10,7 +10,7 @@ return {
     bg = p.surface,
     fg = p.text,
     fg_alt = p.subtle,
-    yellow = p.gold,
+     yellow = p.string,
     cyan = p.rose,
     green = p.blue,
     orange = p.muted,

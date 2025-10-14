@@ -1,5 +1,5 @@
 ---@alias Palette { bg: string, nc: string, base: string, surface: string, overlay: string, muted: string, subtle: string, text: string, red: string, gold: string, rose: string, blue: string, lavender: string, purple: string, green: string }
----@alias PaletteColor "bg" | "nc" | "base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "red" | "gold" | "rose" | "blue" | "lavender" | "purple" | "green" | "highlight_low" | "highlight_med" | "highlight_high"
+---@alias PaletteColor "bg" | "nc" | "base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "red" | "string" | "rose" | "blue" | "lavender" | "purple" | "green" | "highlight_low" | "highlight_med" | "highlight_high"
 ---@alias Highlight { link: string, inherit: boolean } | { fg: string, bg: string, sp: string, bold: boolean, italic: boolean, undercurl: boolean, underline: boolean, underdouble: boolean, underdotted: boolean, underdashed: boolean, strikethrough: boolean, inherit: boolean }
 
 local config = {}
@@ -38,12 +38,12 @@ config.options = {
         hint = "purple",
         info = "lavender",
         ok = "green",
-        warn = "gold",
+         warn = "string",
         note = "blue",
         todo = "rose",
 
-        git_add = "lavender",
-        git_change = "rose",
+         git_add = "string",
+         git_change = "string",
         git_delete = "red",
         git_dirty = "rose",
         git_ignore = "muted",
@@ -57,7 +57,7 @@ config.options = {
         h1 = "purple",
         h2 = "lavender",
         h3 = "rose",
-        h4 = "gold",
+         h4 = "string",
         h5 = "blue",
         h6 = "green",
 
@@ -71,8 +71,10 @@ config.options = {
         -- headings = "text",
     },
 
-    ---@type table<string, Highlight>
-    highlight_groups = {},
+     ---@type table<string, Highlight>
+     highlight_groups = {
+         ["@string"] = { fg = "string" },
+     },
 
     ---Called before each highlight group, before setting the highlight.
     ---@param group string
