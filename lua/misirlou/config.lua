@@ -42,7 +42,7 @@ config.options = {
         note = "blue",
         todo = "rose",
 
-         git_add = "highlight_low",
+         git_add = "text",
          git_change = "highlight_med",
          git_delete = "highlight_high",
         git_dirty = "rose",
