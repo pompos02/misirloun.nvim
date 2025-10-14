@@ -1,9 +1,9 @@
 local M = {}
-local config = require("misirlou.config")
+local config = require("misirloun.config")
 
 local function set_highlights()
-    local utilities = require("misirlou.utilities")
-    local palette = require("misirlou.palette")
+    local utilities = require("misirloun.utilities")
+    local palette = require("misirloun.palette")
     local styles = config.options.styles
 
     local groups = {}
@@ -1250,12 +1250,12 @@ local function set_highlights()
 
         -- Support StatusLineTerm & StatusLineTermNC from vim
         vim.cmd([[
-		augroup misirlou
+		augroup misirloun
 			autocmd!
 			autocmd TermOpen * if &buftype=='terminal'
 				\|setlocal winhighlight=StatusLine:StatusLineTerm,StatusLineNC:StatusLineTermNC
 				\|else|setlocal winhighlight=|endif
-			autocmd ColorSchemePre * autocmd! misirlou
+			autocmd ColorSchemePre * autocmd! misirloun
 		augroup END
 		]])
     end
@@ -1267,7 +1267,7 @@ function M.colorscheme()
         vim.cmd("hi clear")
         vim.cmd("syntax reset")
     end
-    vim.g.colors_name = "misirlou"
+    vim.g.colors_name = "misirloun"
     vim.o.background = "dark"
 
     set_highlights()

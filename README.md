@@ -1,5 +1,5 @@
 <p align="center">
-    <h2 align="center">misirlou.nvim for Neovim</h2>
+    <h2 align="center">misirloun.nvim for Neovim</h2>
 </p>
 
 <p align="center">A dark, elegant Neovim colorscheme with midnight tones</p>
@@ -10,17 +10,17 @@
 
 ## About
 
-misirlou.nvim is a dark Neovim colorscheme featuring deep midnight tones and carefully balanced contrast. Built on the foundations of [rose-pine/neovim](https://github.com/rose-pine/neovim), it reimagines the color palette with darker backgrounds and sophisticated accent colors while maintaining the thoughtful structure and extensive plugin support of its inspiration.
+misirloun.nvim is a dark Neovim colorscheme featuring deep midnight tones and carefully balanced contrast. Built on the foundations of [rose-pine/neovim](https://github.com/rose-pine/neovim), it reimagines the color palette with darker backgrounds and sophisticated accent colors while maintaining the thoughtful structure and extensive plugin support of its inspiration.
 
 ## Credits
 
-This theme builds upon the excellent work of the [Rosé Pine](https://github.com/rose-pine/neovim) project. The core architecture, highlight group definitions, and plugin integrations are derived from rose-pine/neovim. misirlou.nvim adapts these foundations with its own unique color palette and aesthetic direction.
+This theme builds upon the excellent work of the [Rosé Pine](https://github.com/rose-pine/neovim) project. The core architecture, highlight group definitions, and plugin integrations are derived from rose-pine/neovim. misirloun.nvim adapts these foundations with its own unique color palette and aesthetic direction.
 
 ## Getting Started
 
 ### Installation
 
-Install `misirlou.nvim` using your favorite package manager:
+Install `misirloun.nvim` using your favorite package manager:
 
 #### [lazy.nvim](https://lazy.folke.io/installation)
 
@@ -28,10 +28,10 @@ Install `misirlou.nvim` using your favorite package manager:
 
 ```lua
 return {
-    "pompos02/misirlou.nvim",
-    name = "misirlou",
+    "pompos02/misirloun.nvim",
+    name = "misirloun",
     config = function()
-        vim.cmd("colorscheme misirlou")
+        vim.cmd("colorscheme misirloun")
     end
 }
 ```
@@ -39,19 +39,19 @@ return {
 **Single file**
 
 ```lua
-{ "pompos02/misirlou.nvim", name = "misirlou" }
+{ "pompos02/misirloun.nvim", name = "misirloun" }
 ```
 
 #### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use { "pompos02/misirlou.nvim", as = "misirlou" }
+use { "pompos02/misirloun.nvim", as = "misirloun" }
 ```
 
 #### [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'pompos02/misirlou.nvim', { 'as': 'misirlou' }
+Plug 'pompos02/misirloun.nvim', { 'as': 'misirloun' }
 ```
 
 ## Configuration
@@ -59,10 +59,10 @@ Plug 'pompos02/misirlou.nvim', { 'as': 'misirlou' }
 > [!IMPORTANT]
 > Configure options _before_ setting colorscheme.
 
-misirlou.nvim inherits the configuration structure from Rosé Pine. Customize the theme by calling `setup()` before applying the colorscheme:
+misirloun.nvim inherits the configuration structure from Rosé Pine. Customize the theme by calling `setup()` before applying the colorscheme:
 
 ```lua
-require("misirlou").setup({
+require("misirloun").setup({
     dim_inactive_windows = false,
     extend_background_behind_borders = true,
 
@@ -78,57 +78,57 @@ require("misirlou").setup({
         transparency = false,
     },
 
-    groups = {
-        border = "muted",
-        link = "purple",
-        panel = "surface",
+     groups = {
+         border = "text",
+         link = "purple",
+         panel = "surface",
 
-        error = "red",
-        hint = "purple",
-        info = "lavender",
-        warn = "gold",
-        note = "blue",
-        todo = "rose",
+         error = "red",
+         hint = "highlight_low",
+         info = "highlight_low",
+         warn = "highlight_med",
+         note = "blue",
+         todo = "rose",
 
-        git_add = "lavender",
-        git_change = "rose",
-        git_delete = "red",
-        git_dirty = "rose",
-        git_ignore = "muted",
-        git_merge = "purple",
-        git_rename = "blue",
-        git_stage = "purple",
-        git_text = "rose",
-        git_untracked = "subtle",
+         git_add = "text",
+         git_change = "highlight_med",
+         git_delete = "highlight_high",
+         git_dirty = "rose",
+         git_ignore = "muted",
+         git_merge = "purple",
+         git_rename = "blue",
+         git_stage = "purple",
+         git_text = "rose",
+         git_untracked = "subtle",
 
-        h1 = "purple",
-        h2 = "lavender",
-        h3 = "rose",
-        h4 = "gold",
-        h5 = "blue",
-        h6 = "green",
-    },
+         h1 = "purple",
+         h2 = "lavender",
+         h3 = "rose",
+         h4 = "string",
+         h5 = "blue",
+         h6 = "green",
+     },
 
     palette = {
         -- Override default colors (uncomment to customize)
         bg = "#000000",
         nc = "#000000",
-        base = "#16151a",
-        surface = "#1c1c24",
-        overlay = "#252530",
-        muted = "#56526e",
-        subtle = "#6e6a86",
-        text = "#dbdbdb",
-        red = "#c77889",
-        gold = "#dfb591",
-        rose = "#ba8d8d",
-        blue = "#7c98b9",
-        lavender = "#9f9fcf",
-        purple = "#bb9dbd",
-        green = "#a7c1bd",
-        highlight_low = "#1a1826",
-        highlight_med = "#2a283e",
-        highlight_high = "#44415a",
+        base = "#080808",
+        surface = "#191919",
+        overlay = "#2a2a2a",
+        muted = "#444444",
+        subtle = "#555555",
+        text = "#DDDDDD",
+        red = "#ce8787",
+        blue = "#7a7a7a",
+        rose = "#aaaaaa",
+        string = "#7788AA",
+        lavender = "#cccccc",
+        purple = "#7a7a7a",
+        green = "#555555",
+        highlight_low = "#191919",
+        highlight_med = "#444444",
+        highlight_high = "#aaaaaa",
     },
 
     highlight_groups = {
@@ -142,29 +142,33 @@ require("misirlou").setup({
     end,
 })
 
-vim.cmd("colorscheme misirlou")
+vim.cmd("colorscheme misirloun")
 ```
 
 ## Palette
 
-misirlou.nvim's color palette:
+misirloun.nvim's color palette:
 
 | Color    | Hex       | Usage             |
 | -------- | --------- | ----------------- |
 | bg       | `#000000` | Background        |
-| base     | `#16151a` | Elevated surfaces |
-| surface  | `#1c1c24` | UI elements       |
-| overlay  | `#252530` | Overlays          |
-| muted    | `#56526e` | Muted content     |
-| subtle   | `#6e6a86` | Subtle text       |
-| text     | `#dbdbdb` | Primary text      |
-| red      | `#c77889` | Errors, deletions |
-| gold     | `#dfb591` | Warnings, strings |
-| rose     | `#ba8d8d` | Accents, changes  |
-| blue     | `#7c98b9` | Keywords, info    |
-| lavender | `#9f9fcf` | Types, classes    |
-| purple   | `#bb9dbd` | Functions, hints  |
-| green    | `#a7c1bd` | Success states    |
+| nc       | `#000000` |                   |
+| base     | `#080808` | Elevated surfaces |
+| surface  | `#191919` | UI elements       |
+| overlay  | `#2a2a2a` | Overlays          |
+| muted    | `#444444` | Muted content     |
+| subtle   | `#555555` | Subtle text       |
+| text     | `#DDDDDD` | Primary text      |
+| red      | `#ce8787` | Errors, deletions |
+| blue     | `#7a7a7a` | Keywords, info    |
+| rose     | `#aaaaaa` | Accents, changes  |
+| string   | `#7788AA` | Warnings, strings |
+| lavender | `#cccccc` | Types, classes    |
+| purple   | `#7a7a7a` | Functions, hints  |
+| green    | `#555555` | Success states    |
+| highlight_low | `#191919` |                |
+| highlight_med | `#444444` |                |
+| highlight_high | `#aaaaaa` |               |
 
 ## Features
 
@@ -178,7 +182,7 @@ misirlou.nvim's color palette:
 
 ## Plugin Support
 
-misirlou.nvim includes first-class support for popular plugins including:
+misirloun.nvim includes first-class support for popular plugins including:
 
 - Telescope
 - Neo-tree / NvimTree

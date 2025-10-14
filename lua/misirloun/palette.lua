@@ -1,4 +1,4 @@
-local options = require("misirlou.config").options
+local options = require("misirloun.config").options
 
 local palette = {
 

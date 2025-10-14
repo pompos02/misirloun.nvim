@@ -2,10 +2,10 @@
 --- https://github.com/akinsho/bufferline.nvim
 ---
 --- @usage
---- local highlights = require("misirlou.plugins.bufferline")
+--- local highlights = require("misirloun.plugins.bufferline")
 --- require("bufferline").setup({ highlights = highlights })
 
-local p = require("misirlou.palette")
+local p = require("misirloun.palette")
 
 return {
     -- fill = {

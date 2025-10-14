@@ -2,9 +2,9 @@
 --- https://github.com/NTBBloodbath/galaxyline.nvim
 ---
 --- @usage
---- local highlights = require("misirlou.plugins.galaxyline")
+--- local highlights = require("misirloun.plugins.galaxyline")
 
-local p = require("misirlou.palette")
+local p = require("misirloun.palette")
 
 return {
     bg = p.surface,

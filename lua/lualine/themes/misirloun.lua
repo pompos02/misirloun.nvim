@@ -1,5 +1,5 @@
-local p = require("misirlou.palette")
-local config = require("misirlou.config")
+local p = require("misirloun.palette")
+local config = require("misirloun.config")
 
 local bg_base = p.surface
 if config.options.styles.transparency then
