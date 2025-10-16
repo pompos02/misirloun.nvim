@@ -9,10 +9,11 @@ local palette = {
     c5 = "#444444",
     c6 = "#666666",
     c7 = "#DDDDDD",
-    white = "#ffffff",
+    c70 = "#9c9c9c",
     red = "#ce8787",
     gold = "#d4ab5f",
     string = "#7788AA",
+    white = "#ffffff",
 }
 
 if options.palette ~= nil and next(options.palette) then
