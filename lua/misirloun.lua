@@ -186,7 +186,7 @@ local function set_highlights()
 
         Boolean = { fg = palette.c7 },
         Character = { fg = palette.c7 },
-        Comment = { fg = palette.c5, italic = styles.italic },
+        Comment = { fg = palette.c4, italic = styles.italic },
         Conditional = { fg = palette.c6 },
         Constant = { fg = palette.c7 },
         Debug = { fg = palette.c7 },
@@ -214,7 +214,7 @@ local function set_highlights()
         Repeat = { fg = palette.c6 },
         Special = { fg = palette.c7 },
         SpecialChar = { link = "Special" },
-        SpecialComment = { fg = palette.c5 },
+        SpecialComment = { fg = palette.c4 },
         Statement = { fg = palette.c6 },
         StorageClass = { fg = palette.c7 },
         String = { fg = palette.string },
@@ -351,7 +351,7 @@ local function set_highlights()
         -- ["@comment.documentation"] = {},
 
         ["@comment.error"] = { fg = groups.error },
-        ["@comment.warning"] = { fg = palette.c5 },
+        ["@comment.warning"] = { fg = palette.c4 },
         ["@comment.todo"] = { fg = groups.todo, bg = groups.todo, blend = 15 },
         ["@comment.hint"] = { fg = groups.hint, bg = groups.hint, blend = 15 },
         ["@comment.info"] = { fg = groups.info, bg = groups.info, blend = 15 },
