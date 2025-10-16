@@ -2,26 +2,16 @@ local options = require("misirloun.config").options
 
 local palette = {
 
-    bg = "#000000",
-    nc = "#000000",
-    base = "#080808",
-    surface = "#191919",
-    overlay = "#2a2a2a",
-    muted = "#444444",
-    subtle = "#555555",
-    text = "#DDDDDD",
+    c1 = "#000000",
+    c2 = "#080808",
+    c3 = "#191919",
+    c4 = "#2a2a2a",
+    c5 = "#444444",
+    c6 = "#555555",
+    c7 = "#DDDDDD",
     red = "#ce8787",
     gold = "#bd9b5a",
-    blue = "#7a7a7a",
-    rose = "#aaaaaa",
     string = "#7788AA",
-    lavender = "#cccccc",
-    purple = "#7a7a7a",
-    green = "#555555",
-
-    highlight_low = "#191919",
-    highlight_med = "#444444",
-    highlight_high = "#aaaaaa",
 }
 
 if options.palette ~= nil and next(options.palette) then

@@ -111,24 +111,16 @@ require("misirloun").setup({
 
     palette = {
         -- Override default colors (uncomment to customize)
-        bg = "#000000",
-        nc = "#000000",
-        base = "#080808",
-        surface = "#191919",
-        overlay = "#2a2a2a",
-        muted = "#444444",
-        subtle = "#555555",
-        text = "#DDDDDD",
+        c1 = "#000000",
+        c2 = "#080808",
+        c3 = "#191919",
+        c4 = "#2a2a2a",
+        c5 = "#444444",
+        c6 = "#555555",
+        c7 = "#DDDDDD",
         red = "#ce8787",
-        blue = "#7a7a7a",
-        rose = "#aaaaaa",
+        gold = "#bd9b5a",
         string = "#7788AA",
-        lavender = "#cccccc",
-        purple = "#7a7a7a",
-        green = "#555555",
-        highlight_low = "#191919",
-        highlight_med = "#444444",
-        highlight_high = "#aaaaaa",
     },
 
     highlight_groups = {
@@ -151,24 +143,16 @@ misirloun.nvim's color palette:
 
 | Color    | Hex       | Usage             |
 | -------- | --------- | ----------------- |
-| bg       | `#000000` | Background        |
-| nc       | `#000000` |                   |
-| base     | `#080808` | Elevated surfaces |
-| surface  | `#191919` | UI elements       |
-| overlay  | `#2a2a2a` | Overlays          |
-| muted    | `#444444` | Muted content     |
-| subtle   | `#555555` | Subtle text       |
-| text     | `#DDDDDD` | Primary text      |
+| c1       | `#000000` | Darkest - Background |
+| c2       | `#080808` | Elevated surfaces |
+| c3       | `#191919` | UI elements       |
+| c4       | `#2a2a2a` | Overlays          |
+| c5       | `#444444` | Muted content     |
+| c6       | `#555555` | Subtle text       |
+| c7       | `#DDDDDD` | Brightest - Primary text |
 | red      | `#ce8787` | Errors, deletions |
-| blue     | `#7a7a7a` | Keywords, info    |
-| rose     | `#aaaaaa` | Accents, changes  |
-| string   | `#7788AA` | Warnings, strings |
-| lavender | `#cccccc` | Types, classes    |
-| purple   | `#7a7a7a` | Functions, hints  |
-| green    | `#555555` | Success states    |
-| highlight_low | `#191919` |                |
-| highlight_med | `#444444` |                |
-| highlight_high | `#aaaaaa` |               |
+| gold     | `#bd9b5a` | Warnings, accents |
+| string   | `#7788AA` | Strings, special values |
 
 ## Features
 

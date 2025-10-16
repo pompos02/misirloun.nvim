@@ -21,8 +21,8 @@ return {
     -- 	bg = "<color-value-here>",
     -- },
     tab_selected = {
-        fg = p.text,
-        bg = p.overlay,
+        fg = p.c7,
+        bg = p.c4,
     },
     -- tab_close = {
     -- 	fg = "<color-value-here>",
@@ -41,12 +41,12 @@ return {
     -- 	bg = "<color-value-here>",
     -- },
     buffer_visible = {
-        fg = p.subtle,
-        bg = p.base,
+        fg = p.c6,
+        bg = p.c2,
     },
     buffer_selected = {
-        fg = p.text,
-        bg = p.surface,
+        fg = p.c7,
+        bg = p.c3,
         bold = true,
         italic = true,
     },

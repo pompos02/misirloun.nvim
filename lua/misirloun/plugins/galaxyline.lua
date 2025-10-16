@@ -7,14 +7,14 @@
 local p = require("misirloun.palette")
 
 return {
-    bg = p.surface,
-    fg = p.text,
-    fg_alt = p.subtle,
+    bg = p.c3,
+    fg = p.c7,
+    fg_alt = p.c6,
      yellow = p.string,
-    cyan = p.rose,
-    green = p.blue,
-    orange = p.muted,
-    magenta = p.purple,
-    blue = p.lavender,
+    cyan = "#aaaaaa",
+    green = "#7a7a7a",
+    orange = p.c5,
+    magenta = "#7a7a7a",
+    blue = "#cccccc",
     red = p.red,
 }

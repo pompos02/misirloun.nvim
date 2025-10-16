@@ -1,5 +1,5 @@
----@alias Palette { bg: string, nc: string, base: string, surface: string, overlay: string, muted: string, subtle: string, text: string, red: string, gold: string, rose: string, blue: string, lavender: string, purple: string, green: string }
----@alias PaletteColor "bg" | "nc" | "base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "red" | "string" | "rose" | "blue" | "lavender" | "purple" | "green" | "highlight_low" | "highlight_med" | "highlight_high"
+---@alias Palette { c1: string, c2: string, c3: string, c4: string, c5: string, c6: string, c7: string, red: string, gold: string, string: string }
+---@alias PaletteColor "c1" | "c2" | "c3" | "c4" | "c5" | "c6" | "c7" | "red" | "gold" | "string"
 ---@alias Highlight { link: string, inherit: boolean } | { fg: string, bg: string, sp: string, bold: boolean, italic: boolean, undercurl: boolean, underline: boolean, underdouble: boolean, underdotted: boolean, underdashed: boolean, strikethrough: boolean, inherit: boolean }
 
 local config = {}
@@ -30,43 +30,43 @@ config.options = {
 
     ---@type table<string, string | PaletteColor>
     groups = {
-        border = "text",
-        link = "purple",
-        panel = "surface",
+        border = "c7",
+        link = "#7a7a7a",
+        panel = "c3",
 
         error = "red",
-        hint = "highlight_low",
-        info = "highlight_low",
-        ok = "green",
+        hint = "c3",
+        info = "c3",
+        ok = "c6",
         warn = "gold",
-        note = "blue",
-        todo = "text",
+        note = "#7a7a7a",
+        todo = "c7",
 
-        git_add = "text",
-        git_change = "highlight_med",
-        git_delete = "highlight_high",
-        git_dirty = "rose",
-        git_ignore = "muted",
-        git_merge = "purple",
-        git_rename = "blue",
-        git_stage = "purple",
-        git_text = "rose",
-        git_untracked = "subtle",
+        git_add = "c7",
+        git_change = "c5",
+        git_delete = "#aaaaaa",
+        git_dirty = "#aaaaaa",
+        git_ignore = "c5",
+        git_merge = "#7a7a7a",
+        git_rename = "#7a7a7a",
+        git_stage = "#7a7a7a",
+        git_text = "#aaaaaa",
+        git_untracked = "c6",
 
         ---@type string | PaletteColor
-        h1 = "purple",
-        h2 = "lavender",
-        h3 = "rose",
+        h1 = "#7a7a7a",
+        h2 = "#cccccc",
+        h3 = "#aaaaaa",
         h4 = "string",
-        h5 = "blue",
-        h6 = "green",
+        h5 = "#7a7a7a",
+        h6 = "c6",
 
         ---@deprecated Replaced by `options.highlight_groups["Normal"]`
-        -- background = "base",
+        -- background = "c2",
         ---@deprecated Replaced by `options.highlight_groups["Comment"]`
-        -- comment = "subtle",
+        -- comment = "c6",
         ---@deprecated Replaced by `options.highlight_groups["@punctuation"]`
-        -- punctuation = "muted",
+        -- punctuation = "c5",
         ---@deprecated Expects a table with values h1...h6
         -- headings = "text",
     },
@@ -97,7 +97,7 @@ config.options = {
 
 local function migrate(options)
     if options.bold_vert_split then
-        local border = options.groups.border or "muted"
+        local border = options.groups.border or "c5"
         options.highlight_groups["VertSplit"] = { fg = border, bg = border }
         options.highlight_groups["WinSeparator"] = { fg = border, bg = border }
     end
