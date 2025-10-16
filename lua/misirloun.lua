@@ -215,7 +215,7 @@ local function set_highlights()
         Special = { fg = palette.c7 },
         SpecialChar = { link = "Special" },
         SpecialComment = { fg = palette.c6 },
-        Statement = { fg = palette.c6, bold = styles.bold },
+        Statement = { fg = palette.c6 },
         StorageClass = { fg = palette.c7 },
         String = { fg = palette.string },
         Structure = { fg = palette.c7 },
@@ -274,18 +274,18 @@ local function set_highlights()
 
         --- Treesitter
         --- |:help treesitter-highlight-groups|
-        ["@variable"] = { fg = palette.c7, italic = styles.italic },
-        ["@variable.builtin"] = { fg = palette.c5, italic = styles.italic, bold = styles.bold },
-        ["@variable.parameter"] = { fg = palette.c6, italic = styles.italic },
-        ["@variable.parameter.builtin"] = { fg = palette.c6, italic = styles.italic, bold = styles.bold },
-        ["@variable.member"] = { fg = palette.c7 },
+        ["@variable"] = { fg = palette.c7 },
+        ["@variable.builtin"] = { fg = palette.c7, italic = styles.italic, bold = styles.bold },
+        ["@variable.parameter"] = { fg = palette.c7 },
+        ["@variable.parameter.builtin"] = { fg = palette.c7, italic = styles.italic, bold = styles.bold },
+        ["@variable.member"] = { fg = palette.c6 },
 
         ["@constant"] = { fg = palette.c7 },
-        ["@constant.builtin"] = { fg = palette.c7, bold = styles.bold },
+        ["@constant.builtin"] = { fg = palette.c7 },
         ["@constant.macro"] = { fg = palette.c7 },
 
         ["@module"] = { fg = palette.c7 },
-        ["@module.builtin"] = { fg = palette.c7, bold = styles.bold },
+        ["@module.builtin"] = { fg = palette.c7 },
         ["@label"] = { link = "Label" },
 
         ["@string"] = { link = "String" },
@@ -305,20 +305,20 @@ local function set_highlights()
         ["@number.float"] = { link = "Number" },
         ["@float"] = { link = "Number" },
 
-        ["@type"] = { fg = palette.c7 },
-        ["@type.builtin"] = { fg = palette.c7, bold = styles.bold },
+        ["@type"] = { fg = palette.white },
+        ["@type.builtin"] = { fg = palette.c7 },
         -- ["@type.definition"] = {},
 
-        ["@attribute"] = { fg = palette.c6 },
-        ["@attribute.builtin"] = { fg = palette.c6, bold = styles.bold },
-        ["@property"] = { fg = palette.c7, italic = styles.italic },
+        ["@attribute"] = { fg = palette.c6, italic = styles.italic },
+        ["@attribute.builtin"] = { fg = palette.c6, italic = styles.italic },
+        ["@property"] = { fg = palette.c6 },
 
-        ["@function"] = { fg = palette.c7 },
+        ["@function"] = { fg = palette.white, bold = styles.bold },
         ["@function.builtin"] = { fg = palette.c7, bold = styles.bold },
-        -- ["@function.call"] = {},
+        ["@function.call"] = { fg = palette.white },
         ["@function.macro"] = { link = "Function" },
 
-        ["@function.method"] = { fg = palette.c7 },
+        ["@function.method"] = { fg = palette.white },
         ["@function.method.call"] = { fg = palette.c6 },
 
         ["@constructor"] = { fg = palette.c7 },
