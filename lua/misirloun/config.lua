@@ -40,7 +40,7 @@ config.options = {
         ok = "green",
         warn = "gold",
         note = "blue",
-        todo = "rose",
+        todo = "text",
 
         git_add = "text",
         git_change = "highlight_med",
