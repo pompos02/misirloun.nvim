@@ -8,23 +8,23 @@ end
 
 return {
     normal = {
-        a = { bg = "#aaaaaa", fg = p.c2, gui = "bold" },
-        b = { bg = p.c4, fg = "#aaaaaa" },
+        a = { bg = p.c7, fg = p.c2, gui = "bold" },
+        b = { bg = p.c4, fg = p.c7 },
         c = { bg = bg_base, fg = p.c7 },
     },
     insert = {
-        a = { bg = "#cccccc", fg = p.c2, gui = "bold" },
-        b = { bg = p.c4, fg = "#cccccc" },
+        a = { bg = p.c7, fg = p.c2, gui = "bold" },
+        b = { bg = p.c4, fg = p.c7 },
         c = { bg = bg_base, fg = p.c7 },
     },
     visual = {
-        a = { bg = "#7a7a7a", fg = p.c2, gui = "bold" },
-        b = { bg = p.c4, fg = "#7a7a7a" },
+        a = { bg = p.c6, fg = p.c2, gui = "bold" },
+        b = { bg = p.c4, fg = p.c6 },
         c = { bg = bg_base, fg = p.c7 },
     },
     replace = {
-        a = { bg = "#7a7a7a", fg = p.c2, gui = "bold" },
-        b = { bg = p.c4, fg = "#7a7a7a" },
+        a = { bg = p.c6, fg = p.c2, gui = "bold" },
+        b = { bg = p.c4, fg = p.c6 },
         c = { bg = bg_base, fg = p.c7 },
     },
     command = {

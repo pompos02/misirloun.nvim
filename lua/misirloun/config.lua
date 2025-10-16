@@ -31,7 +31,7 @@ config.options = {
     ---@type table<string, string | PaletteColor>
     groups = {
         border = "c7",
-        link = "#7a7a7a",
+        link = "c6",
         panel = "c3",
 
         error = "red",
@@ -39,26 +39,26 @@ config.options = {
         info = "c3",
         ok = "c6",
         warn = "gold",
-        note = "#7a7a7a",
+        note = "c6",
         todo = "c7",
 
         git_add = "c7",
         git_change = "c5",
-        git_delete = "#aaaaaa",
-        git_dirty = "#aaaaaa",
+        git_delete = "c7",
+        git_dirty = "c7",
         git_ignore = "c5",
-        git_merge = "#7a7a7a",
-        git_rename = "#7a7a7a",
-        git_stage = "#7a7a7a",
-        git_text = "#aaaaaa",
+        git_merge = "c6",
+        git_rename = "c6",
+        git_stage = "c6",
+        git_text = "c7",
         git_untracked = "c6",
 
         ---@type string | PaletteColor
-        h1 = "#7a7a7a",
-        h2 = "#cccccc",
-        h3 = "#aaaaaa",
+        h1 = "c6",
+        h2 = "c7",
+        h3 = "c7",
         h4 = "string",
-        h5 = "#7a7a7a",
+        h5 = "c6",
         h6 = "c6",
 
         ---@deprecated Replaced by `options.highlight_groups["Normal"]`

@@ -10,7 +10,7 @@ local palette = {
     c6 = "#555555",
     c7 = "#DDDDDD",
     red = "#ce8787",
-    gold = "#bd9b5a",
+    gold = "#d4ab5f",
     string = "#7788AA",
 }
 
