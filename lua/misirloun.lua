@@ -172,7 +172,7 @@ local function set_highlights()
         DiagnosticSignHint = { link = "DiagnosticHint" },
         DiagnosticSignInfo = { link = "DiagnosticInfo" },
         DiagnosticSignOk = { link = "DiagnosticOk" },
-        DiagnosticSignWarn = { fg = palette.c6 },
+        DiagnosticSignWarn = { fg = palette.gold },
         DiagnosticUnderlineError = { sp = groups.error, undercurl = true },
         DiagnosticUnderlineHint = { sp = groups.hint, undercurl = true },
         DiagnosticUnderlineInfo = { sp = groups.info, undercurl = true },
