@@ -275,9 +275,9 @@ local function set_highlights()
         --- Treesitter
         --- |:help treesitter-highlight-groups|
         ["@variable"] = { fg = palette.c7 },
-        ["@variable.builtin"] = { fg = palette.c7, italic = styles.italic, bold = styles.bold },
+        ["@variable.builtin"] = { fg = palette.c7, italic = styles.italic },
         ["@variable.parameter"] = { fg = palette.c7 },
-        ["@variable.parameter.builtin"] = { fg = palette.c7, italic = styles.italic, bold = styles.bold },
+        ["@variable.parameter.builtin"] = { fg = palette.c7, italic = styles.italic },
         ["@variable.member"] = { fg = palette.c70 },
 
         ["@constant"] = { fg = palette.c7 },
@@ -313,8 +313,8 @@ local function set_highlights()
         ["@attribute.builtin"] = { fg = palette.c70, italic = styles.italic },
         ["@property"] = { fg = palette.c70 },
 
-        ["@function"] = { fg = palette.c70, bold = styles.bold },
-        ["@function.builtin"] = { fg = palette.c70, bold = styles.bold },
+        ["@function"] = { fg = palette.c70 },
+        ["@function.builtin"] = { fg = palette.c70 },
         ["@function.call"] = { fg = palette.c70 },
         ["@function.macro"] = { link = "Function" },
 
