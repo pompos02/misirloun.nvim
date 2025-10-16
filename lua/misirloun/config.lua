@@ -42,15 +42,15 @@ config.options = {
         note = "c6",
         todo = "c7",
 
-        git_add = "c7",
-        git_change = "c5",
-        git_delete = "c7",
-        git_dirty = "c7",
+        git_add = "green",
+        git_change = "gold",
+        git_delete = "red",
+        git_dirty = "gold",
         git_ignore = "c5",
-        git_merge = "c6",
-        git_rename = "c6",
-        git_stage = "c6",
-        git_text = "c7",
+        git_merge = "gold",
+        git_rename = "gold",
+        git_stage = "green",
+        git_text = "gold",
         git_untracked = "c6",
 
         ---@type string | PaletteColor
