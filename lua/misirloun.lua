@@ -146,7 +146,7 @@ local function set_highlights()
 
         YankHighlight = { fg = palette.c7, bg = "#cccccc", blend = 50 },
         -- VisualNOS = {},
-        WarningMsg = { fg = palette.c6, bold = styles.bold },
+        WarningMsg = { fg = palette.gold, bold = styles.bold },
         -- Whitespace = {},
         WildMenu = { link = "IncSearch" },
         WinBar = { fg = palette.c6, bg = palette.c1 },
@@ -157,7 +157,7 @@ local function set_highlights()
         DiagnosticHint = { fg = groups.hint },
         DiagnosticInfo = { fg = groups.info },
         DiagnosticOk = { fg = groups.ok },
-        DiagnosticWarn = { fg = palette.c6 },
+        DiagnosticWarn = { fg = palette.gold },
         DiagnosticDefaultError = { link = "DiagnosticError" },
         DiagnosticDefaultHint = { link = "DiagnosticHint" },
         DiagnosticDefaultInfo = { link = "DiagnosticInfo" },
