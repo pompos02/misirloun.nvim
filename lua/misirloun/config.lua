@@ -34,17 +34,17 @@ config.options = {
         link = "purple",
         panel = "surface",
 
-         error = "red",
-         hint = "highlight_low",
-         info = "highlight_low",
-         ok = "green",
-         warn = "highlight_med",
+        error = "red",
+        hint = "highlight_low",
+        info = "highlight_low",
+        ok = "green",
+        warn = "gold",
         note = "blue",
         todo = "rose",
 
-         git_add = "text",
-         git_change = "highlight_med",
-         git_delete = "highlight_high",
+        git_add = "text",
+        git_change = "highlight_med",
+        git_delete = "highlight_high",
         git_dirty = "rose",
         git_ignore = "muted",
         git_merge = "purple",
@@ -57,7 +57,7 @@ config.options = {
         h1 = "purple",
         h2 = "lavender",
         h3 = "rose",
-         h4 = "string",
+        h4 = "string",
         h5 = "blue",
         h6 = "green",
 
@@ -71,10 +71,10 @@ config.options = {
         -- headings = "text",
     },
 
-     ---@type table<string, Highlight>
-     highlight_groups = {
-         ["@string"] = { fg = "string" },
-     },
+    ---@type table<string, Highlight>
+    highlight_groups = {
+        ["@string"] = { fg = "string" },
+    },
 
     ---Called before each highlight group, before setting the highlight.
     ---@param group string
