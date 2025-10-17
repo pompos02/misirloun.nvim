@@ -54,12 +54,12 @@ config.options = {
         git_untracked = "c6",
 
         ---@type string | PaletteColor
-        h1 = "c6",
+        h1 = "c7",
         h2 = "c7",
         h3 = "c7",
-        h4 = "string",
-        h5 = "c6",
-        h6 = "c6",
+        h4 = "c7",
+        h5 = "c7",
+        h6 = "c7",
 
         ---@deprecated Replaced by `options.highlight_groups["Normal"]`
         -- background = "c2",
