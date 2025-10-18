@@ -13,8 +13,8 @@ local palette = {
     red = "#ce8787",
     gold = "#d4ab5f",
     green = "#789978",
-    string = "#93abb3",
-    keys = "#a2a2c3",
+    string = "#7788AA",
+    keys = "#7f6a7f",
     white = "#ffffff",
 }
 
