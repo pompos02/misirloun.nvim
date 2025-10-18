@@ -14,7 +14,7 @@ local palette = {
     gold = "#d4ab5f",
     green = "#789978",
     string = "#7788AA",
-    keys = "#7f6a7f",
+    keys = "#c8daff",
     white = "#ffffff",
 }
 
