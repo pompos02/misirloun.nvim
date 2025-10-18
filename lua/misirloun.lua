@@ -221,7 +221,7 @@ local function set_highlights()
         Structure = { fg = palette.c7 },
         Tag = { fg = palette.c7 },
         Todo = { fg = palette.c7, bg = palette.c7, blend = 20 },
-        Type = { fg = palette.keys },
+        Type = { fg = palette.keys, bold = styles.bold },
         TypeDef = { link = "Type" },
         Underlined = { fg = palette.c6, underline = true },
 
@@ -305,8 +305,8 @@ local function set_highlights()
         ["@number.float"] = { link = "Number" },
         ["@float"] = { link = "Number" },
 
-        ["@type"] = { fg = palette.keys },
-        ["@type.builtin"] = { fg = palette.keys },
+        ["@type"] = { fg = palette.keys, bold = styles.bold },
+        ["@type.builtin"] = { fg = palette.keys, bold = styles.bold },
         -- ["@type.definition"] = {},
 
         ["@attribute"] = { fg = palette.c70, italic = styles.italic },
