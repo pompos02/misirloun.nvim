@@ -15,7 +15,7 @@ local palette = {
     green = "#789978",
     -- string = "#7788AA",
     string = "#93abb3",
-    keys = " #a2a2c3",
+    keys = "#a2a2c3",
     white = "#ffffff",
 }
 
